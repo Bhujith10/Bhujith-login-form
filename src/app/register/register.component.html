@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row justify-content-start" style="margin-top: 10px; margin-left: 10px;">
+        <h1>Create Users</h1>
+    </div>
+    <div class="row justify-content-center">
+        <h5>User Details</h5>
+    </div>
+    <br>
+    <form [formGroup]="registerForm">
+    <div class="row justify-content-center">
+        <div class="col-xs-6">
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" id="deptName" class="form-control" formControlName="deptName" placeholder="Department Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" id="empId" class="form-control" formControlName="empId" placeholder="Employee Id">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="email" id="emailId" class="form-control" formControlName="emailId" placeholder="Email Id">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" id="loc" class="form-control" formControlName="loc" placeholder="Location">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-6" style="margin-left: 50px;">
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" id="empName" class="form-control" formControlName="empName" placeholder="Employee Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" id="gender" class="form-control" formControlName="gender" placeholder="Gender">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="text" id="project" class="form-control" formControlName="project" placeholder="Project">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <input type="number" id="contact" class="form-control" formControlName="contact" placeholder="Contact">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <ul class="nav nav-pills nav-justified">
+            <li class="nav-item">
+                <a class="nav-link">User access</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary" type="button">Read</button>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-primary" type="button">Write</button>
+            </li>
+        </ul>
+        <br>
+        <div class="row justify-content-center">
+            <button class="btn btn-success" type="submit">CREATE USER</button>
+        </div>
+</form>
+</div>
+
